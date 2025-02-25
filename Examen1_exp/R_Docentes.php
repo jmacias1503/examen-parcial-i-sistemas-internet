@@ -13,7 +13,7 @@
   print("ISR: ".$ISR);
   print("Sexo: ".$Sexo);
   print("Dept: ".$Dept);
-  print("FechaIngreso: ".$FechaIngreso)
+  print("FechaIngreso: ".$FechaIngreso);
 
   $SQL = "INSERT INTO Docentes(Clave, Nombre, Salario, ISR, Sexo, Dept, FechaIngreso) VALUES('$Clave', '$Nombre', '$Salario', '$ISR', '$Sexo', '$Dept', '$FechaIngreso');";
   $host = "localhost";
