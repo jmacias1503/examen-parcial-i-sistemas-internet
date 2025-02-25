@@ -2,7 +2,7 @@
   $Clave = $_POST['Clave'];
   $Nombre = $_POST['Nombre'];
   $Salario = $_POST['Salario'];
-  $ISR = $Salario * 0.8;
+  $ISR = $Salario * 0.08;
   $Sexo = $_POST['Sexo'];
   $Dept = $_POST['Dept'];
   $FechaIngreso = $_POST['FechaIngreso'];
@@ -13,7 +13,7 @@
   print("ISR: ".$ISR);
   print("Sexo: ".$Sexo);
   print("Dept: ".$Dept);
-  print("FechaIngreso: ".$FechaIngreso)
+  print("FechaIngreso: ".$FechaIngreso);
 
   $SQL = "INSERT INTO Docentes(Clave, Nombre, Salario, ISR, Sexo, Dept, FechaIngreso) VALUES('$Clave', '$Nombre', '$Salario', '$ISR', '$Sexo', '$Dept', '$FechaIngreso');";
   $host = "localhost";
@@ -24,7 +24,7 @@
   $conn = new mysqli($host, $username, $password, $database);
 
   $resultSet = mysqli_query($conn, $SQL);
-  mysqli=close($conn);
+  mysqli_close($conn);
   if ($resultSet == 1){
     print("Consulta realizada correctamente");
   }

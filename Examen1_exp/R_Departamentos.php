@@ -3,9 +3,13 @@
     $Nombre = $_GET['Nombre'];
     $Status = $_GET['Status'];
 
-    $SQL = "INSERT INTO departamento VALUES ('$ClaveDept', '$Nombre', '$Status')";
+    print("ClaveDept: ".$ClaveDept);
+    print("Nombre: ".$Nombre);
+    print("Status: ".$Status);
     
-    print($SQL);
+    $SQL = "INSERT INTO departamentos VALUES ('$ClaveDept', '$Nombre', '$Status')";
+    
+
 
     $servername = "localhost";
     $username = "root";
