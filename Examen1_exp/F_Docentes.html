@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="es">
+  <form method="post" action="R_Docentes.php">
+    <label>Clave</label>
+    <input type="number" maxlength="6" name="Clave" id="Clave" required>
+    <br>
+    <label>Nombre</label>
+    <input type="text" maxlength="50" name="Nombre" id="Nombre" required>
+    <br>
+    <label>Salario</label>
+    <input type="number" step="0.01" name="Salario" id="Salario" required>
+    <br>
+    <label>Sexo</label>
+    <select name="Sexo" id="Sexo">
+      <option value="0">Masculino</option>
+      <option value="1">Femenino</option>
+    </select>
+    <br>
+    <label>ID Departamento</label>
+    <input type="number" required maxlength="6" name="Dept" id="Dept">
+    <br>
+    <label>Fecha de ingreso</label>
+    <input type="date" name="FechaIngreso" id="FechaIngreso"
+    <br>
+    <input type="submit">
+  </form>
+</html>
