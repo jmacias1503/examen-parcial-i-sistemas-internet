@@ -24,7 +24,7 @@
   $conn = new mysqli($host, $username, $password, $database);
 
   $resultSet = mysqli_query($conn, $SQL);
-  mysqli=close($conn);
+  mysqli_close($conn);
   if ($resultSet == 1){
     print("Consulta realizada correctamente");
   }
