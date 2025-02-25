@@ -2,7 +2,7 @@
   $Clave = $_POST['Clave'];
   $Nombre = $_POST['Nombre'];
   $Salario = $_POST['Salario'];
-  $ISR = $Salario * 0.8;
+  $ISR = $Salario * 0.08;
   $Sexo = $_POST['Sexo'];
   $Dept = $_POST['Dept'];
   $FechaIngreso = $_POST['FechaIngreso'];
